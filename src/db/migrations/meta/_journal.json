@@ -8,6 +8,13 @@
       "when": 1781955361518,
       "tag": "0000_init",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1781955575728,
+      "tag": "0001_recipes_allergens",
+      "breakpoints": true
     }
   ]
 }
