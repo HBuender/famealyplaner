@@ -4,11 +4,10 @@ import "dotenv/config";
 export default defineConfig({
   schema: "./src/db/schema.ts",
   out: "./src/db/migrations",
-  dialect: "postgresql",
+  // libSQL / SQLite. Works with a local file: URL and with a hosted Turso URL.
+  dialect: "turso",
   dbCredentials: {
-    // Migrations use the direct/unpooled connection; runtime queries use the
-    // pooled DATABASE_URL via src/db/client.ts.
-    url:
-      process.env.DATABASE_URL_UNPOOLED ?? process.env.DATABASE_URL ?? "",
+    url: process.env.DATABASE_URL ?? "file:./famealy.db",
+    authToken: process.env.DATABASE_AUTH_TOKEN,
   },
 });

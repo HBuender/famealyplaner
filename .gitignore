@@ -38,5 +38,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# local sqlite / libsql database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
 # claude worktrees
 /.claude/worktrees/

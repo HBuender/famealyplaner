@@ -1,19 +1,12 @@
 {
   "version": "7",
-  "dialect": "postgresql",
+  "dialect": "sqlite",
   "entries": [
     {
       "idx": 0,
-      "version": "7",
-      "when": 1781955361518,
+      "version": "6",
+      "when": 1782284515128,
       "tag": "0000_init",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1781955575728,
-      "tag": "0001_recipes_allergens",
       "breakpoints": true
     }
   ]
